@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMEDIEGO</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    
+    <!-- Enlace de Google Fonts Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_circle,refresh,bolt" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        /* Configuración para los iconos de Google Fonts */
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+
+        /* Estilos personalizados mínimos para el fondo tipo Hero y Banner */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("imagenes/fondoanime.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .banner-destinos {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("imagenes/fondoanime.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .bottom-nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            border-top: 1px solid #444;
+        }
+        .bottom-nav .btn {
+            color: white;
+            border: 1px solid #666;
+            border-radius: 0;
+            background-color: black;
+        }
+        .bottom-nav .btn:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. SECCIÓN HERO (Pantalla Principal con menú inferior) -->
+    <div class="container-fluid hero-section p-0">
+        <br>
+        <div class="text-center text-white">
+            <h1 class="display-3 fw-bold text-uppercase" style="letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">ANIMEDIEGO</h1>
+            <p class="fs-5" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">Las Mejores Series de Anime en un solo Lugar</p>
+        </div>
+
+        <!-- Botones inferiores -->
+        <div class="bottom-nav py-3">
+            <div class="container">
+                <div class="row text-center g-2">
+                    <div class="col-md-4"><a href="#series" class="btn w-100 py-2">Series</a></div>
+                    <div class="col-md-4"><a href="#criticas" class="btn w-100 py-2">Criticas</a></div>
+                    <div class="col-md-4"><a href="#imagenes" class="btn w-100 py-2">Imagenes</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. SECCIÓN: Características / Columnas -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5 fw-bold" style="font-family: cursive;"></h2>
+        
+        <div class="row align-items-center mb-5" data-aos="fade-up">
+    <div class="col-md-6 mb-3 mb-md-0">
+        <img src="./imagenes/miku.jpg" class="img-fluid rounded shadow" alt="Miku">
+    </div>
+    <div class="col-md-6">
+        <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolor quo ipsum id similique cumque aut sapiente consequatur, quae, deserunt, magnam fugit illum libero. Possimus sunt consectetur exercitationem iste fuga ipsum vero, delectus et, reiciendis alias velit facilis! Atque temporibus sit fuga ab ullam ipsam officia esse, deleniti obcaecati similique.
+        </p>
+    </div>
+</div>
+
+        <!-- Iconos / Características inferiores con Material Symbols -->
+        <div class="row text-center mt-4 g-4">
+            <div class="col-md-4">
+                <span class="material-symbols-outlined fs-1 text-info mb-2">check_circle</span>
+                <p class="small text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium, dolores aliquam architecto reprehenderit itaque, eligendi maxime assumenda eaque accusantium minus iusto officiis ipsa voluptas suscipit ratione laborum nulla voluptates qui modi quia ab. Dignissimos ipsum aut inventore repellat nam, unde tempora exercitationem dicta adipisci, quia soluta eius consectetur consequatur!</p>
+            </div>
+            <div class="col-md-4">
+                <span class="material-symbols-outlined fs-1 text-info mb-2">refresh</span>
+                <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, totam sint minus porro, possimus provident et assumenda autem voluptas minima natus. Dolor alias debitis dolore nobis quae veniam autem! Soluta provident eligendi vel, ab dolor cumque itaque architecto doloremque ipsam laborum odit asperiores temporibus aliquid, magni assumenda earum eaque culpa!</p>
+            </div>
+            <div class="col-md-4">
+                <span class="material-symbols-outlined fs-1 text-info mb-2">bolt</span>
+                <p class="small text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quia obcaecati eveniet qui tempore id libero autem quod est! Nostrum illo ut obcaecati assumenda doloremque, inventore necessitatibus ullam minima incidunt, impedit totam. Laboriosam blanditiis excepturi accusantium porro earum voluptatibus aliquam eius velit odio esse sed unde quasi, consectetur a. Corpor</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. BANNER DE DESTINOS -->
+    <div class="container-fluid banner-destinos text-center text-white py-5 my-5" id="series">
+        <h2 class="display-4 fw-bold tracking-wider" style="letter-spacing: 5px;">SERIES</h2>
+    </div>
+
+    <!-- 4. SECCIÓN NACIONALES (Cuadrícula de 6 imágenes) -->
+    <div class="container my-5" id="criticas">
+        <h2 class="text-center fw-bold mb-3"></h2>
+        <p class="text-center text-muted mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rem facere atque est. Ullam, aut dicta, delectus. Minima, et accusamus quidem enim, dolorum illo voluptas lura incidunt a, accusantium reprehenderit at praesentium numquam ipsa sunt.</p>
+
+        <div class="row g-4" id="imagenes">
+            <div class="col-md-4">
+                <img src="./imagenes/miku.jpg" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 1">
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/nino.jpg" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 2">
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/ichika.jpg" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 3">
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/imagen4.png" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 4">
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/imagen8.png" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 5">
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/maomao.jpg" class="img-fluid rounded shadow w-100" style="height: 220px; object-fit: cover;" alt="Destino 6">
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. FOOTER -->
+    <footer class="container-fluid bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Redes sociales / Iconos -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <p class="mb-1"><a href="#" class="text-white text-decoration-none">🌐 Facebook</a></p>
+                    <p class="mb-1"><a href="#" class="text-white text-decoration-none">📷 Instagram</a></p>
+                    <p class="mb-0"><a href="#" class="text-white text-decoration-none">🐦 Twitter</a></p>
+                </div>
+                
+                <!-- Listas de enlaces (Columnas centrales) -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled small text-muted">
+                                <li>Opción 1</li>
+                                <li>Opción 2</li>
+                                <li>Opción 3</li>
+                                <li>Opción 4</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled small text-muted">
+                                <li>Opción 5</li>
+                                <li>Opción 6</li>
+                                <li>Opción 7</li>
+                                <li>Opción 8</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo y Copyright -->
+                <div class="col-md-3 text-center text-md-end">
+                    <h3 class="fw-bold">ANIMEDIEGO</h3>
+                    <p class="small text-muted mb-0">Copyright © 2022 - 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialización de la librería AOS
+        AOS.init();
+    </script>
+</body>
+</html>
